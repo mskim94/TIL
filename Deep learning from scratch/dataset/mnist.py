@@ -76,7 +76,7 @@ def init_mnist():
     dataset = _convert_numpy()
     print("Creating pickle file ...")
     with open(save_file, 'wb') as f:
-        pickle.dump(dataset, f, 3)
+        pickle.dump(dataset, f, -1)
     print("Done!")
 
 def _change_one_hot_label(X):
